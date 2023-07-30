@@ -13,6 +13,7 @@ export default async function SteupLayout({
     redirect("/sign-in");
   }
 
+
   const store = await prismadb.store.findFirst({
     where: {
       userId,
